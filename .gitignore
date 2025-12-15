@@ -1,0 +1,34 @@
+--
+
+### **Suggested Next Step: Create a .gitignore**
+I noticed in your `tree` output that you have compiled executable files (like `mario`, `hello`, `credit`) committed alongside your source code (`.c` files).
+
+It is best practice **not** to upload these binaries to GitHub. I recommend creating a `.gitignore` file in your root folder:
+
+1.  Create a file named `.gitignore`
+2.  Add the following lines to it:
+
+```text
+# Ignore compiled executables
+*.exe
+*.out
+*.o
+
+# Ignore Mac system files (if applicable)
+.DS_Store
+
+# Ignore VS Code settings (optional)
+.vscode/
+
+# Specific executables from your tree (to be safe)
+Week1_C/labs/debug/debug
+Week1_C/labs/half/half
+Week1_C/labs/prime/prime
+Week1_C/problems/cash/cash
+Week1_C/problems/credit/credit
+Week1_C/problems/mario-less/mario
+Week1_C/problems/mario-more/mario
+Week2_Array/problems/caesar/caesar
+Week2_Array/problems/readability/readability
+Week2_Array/problems/scrabble/scrabble
+Week2_Array/problems/substitution/substitution
